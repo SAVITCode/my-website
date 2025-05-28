@@ -108,7 +108,7 @@
         /* Logo Section */
         .logo-section {
             text-align: center;
-            margin-bottom: 0.1rem;
+            margin-bottom: 3rem;
             animation: fadeInDown 1s ease-out;
         }
 
@@ -135,7 +135,7 @@
         .title {
             font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             background: linear-gradient(135deg, #34d399, #10b981, #059669);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -144,18 +144,45 @@
         }
 
         .subtitle {
-            font-size: 1.25rem;
-            font-weight: 400;
+            font-size: 1.1rem;
+            font-weight: 500;
             color: #cbd5e1;
-            margin-bottom: 2rem;
-            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
         }
 
         .description {
-            font-size: 1.1rem;
-            color: #c9cfd8;
-            line-height: 1.7;
+            font-size: 1rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
             margin-bottom: 2rem;
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            padding: 0.5rem;
+            background: rgba(52, 211, 153, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid #34d399;
+        }
+
+        .feature-icon {
+            color: #34d399;
+            font-size: 1rem;
+            min-width: 16px;
         }
 
         /* Social Links */
@@ -296,15 +323,24 @@
             }
             
             .title {
-                font-size: 2rem;
+                font-size: 1.75rem;
             }
             
             .subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .description {
-                font-size: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .features {
+                text-align: center;
+            }
+            
+            .feature-item {
+                font-size: 0.85rem;
+                padding: 0.75rem;
             }
             
             .social-links {
@@ -313,28 +349,65 @@
             
             .social-link {
                 padding: 0.75rem 1rem;
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
             
             .logo {
-                max-width: 250px;
+                max-width: 200px;
+            }
+            
+            .logo-section {
+                margin-bottom: 2rem;
+            }
+            
+            .content {
+                margin-bottom: 3rem;
             }
         }
 
         @media (max-width: 480px) {
             .title {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1.25rem;
+            }
+            
+            .features {
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .feature-item {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
             }
             
             .social-links {
                 flex-direction: column;
                 align-items: center;
+                gap: 0.75rem;
             }
             
             .social-link {
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
                 justify-content: center;
+                padding: 1rem;
+            }
+            
+            .logo {
+                max-width: 160px;
+            }
+            
+            .container {
+                padding: 0.75rem;
             }
         }
 
@@ -371,11 +444,18 @@
         <!-- Content Section -->
         <div class="content">
             <h1 class="title">SavitCode</h1>
-            <p class="subtitle">Automated Trading Systems · Pine Script & Python</p>
-            <p class="description">
-                Build smart alerts with Pine Script on TradingView </br>
-                Automate trades with bots and share tools to improve your strategy
-            </p>
+            <p class="subtitle">Automated Trading Systems • Pine Script & Python</p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <span>Build smart alerts with Pine Script on TradingView</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-robot feature-icon"></i>
+                    <span>Automate trades with bots and share tools to improve your strategy</span>
+                </div>
+            </div>
         </div>
 
         <!-- Social Links -->
