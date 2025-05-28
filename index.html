@@ -185,12 +185,13 @@
             min-width: 16px;
         }
 
-        /* Social Links */
+        /* Social Links - ปรับให้อยู่ในแถวเดียวกัน */
         .social-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            width: 100%;
+            max-width: 600px;
             margin-bottom: 4rem;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
@@ -198,8 +199,9 @@
         .social-link {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 0.75rem;
-            padding: 1rem 1.5rem;
+            padding: 1rem;
             background: rgba(52, 211, 153, 0.1);
             border: 1px solid rgba(52, 211, 153, 0.3);
             border-radius: 12px;
@@ -210,6 +212,7 @@
             backdrop-filter: blur(10px);
             position: relative;
             overflow: hidden;
+            min-height: 60px;
         }
 
         .social-link::before {
@@ -344,11 +347,12 @@
             }
             
             .social-links {
-                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
             }
             
             .social-link {
-                padding: 0.75rem 1rem;
+                padding: 0.75rem;
                 font-size: 0.85rem;
             }
             
@@ -382,15 +386,13 @@
             }
             
             .social-links {
-                flex-direction: column;
-                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
             }
             
             .social-link {
-                width: 100%;
-                max-width: 280px;
-                justify-content: center;
-                padding: 1rem;
+                padding: 0.75rem;
+                min-height: 50px;
             }
             
             .logo {
@@ -453,19 +455,15 @@
         <div class="social-links">
             <a href="https://youtube.com/@savitcode" class="social-link youtube" target="_blank" rel="noopener">
                 <i class="fab fa-youtube"></i>
-
             </a>
             <a href="https://facebook.com/savitcode" class="social-link facebook" target="_blank" rel="noopener">
                 <i class="fab fa-facebook"></i>
-
             </a>
             <a href="https://gumroad.com/savitcode" class="social-link gumroad" target="_blank" rel="noopener">
                 <i class="fas fa-shopping-bag"></i>
-
             </a>
             <a href="https://buymeacoffee.com/savitcode" class="social-link coffee" target="_blank" rel="noopener">
                 <i class="fas fa-coffee"></i>
-
             </a>
         </div>
     </div>
