@@ -18,4 +18,5 @@ This website showcases educational tools, templates, and resources related to Tr
 📄 License:
 This project is not open for reuse or redistribution.
 All content © 2025 SavitCode. All rights reserved.
+
 📌 Disclaimer: This website is for educational purposes only. Not financial advice.
